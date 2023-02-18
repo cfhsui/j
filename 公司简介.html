@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js">
+		</script>
+		<title>云乡呓语</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+				list-style: none;
+				text-decoration: none;
+				border: none;
+				}
+			.wrap{
+				width:1470px;
+				margin:0 auto;
+				}
+			#header{
+				background:lightblue;
+				}
+			#header .wrap{
+				display: flex;
+				height: 65px;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#nav{
+				display: flex;
+			}
+			#nav a{
+				padding:20px;
+				color:#fff;
+			}
+			#schbox{
+				display: flex;
+				border-radius: 30px;
+				overflow: hidden;
+			}
+			#schbox [type="submit"]{
+				width: 50px;
+				height: 30px;
+				background-color: darkturquoise;
+				color: white;
+			}
+			#schbox [type="text"]{
+				width: 200px;
+				height: 30px;
+				padding-left: 1em;
+				font-size: 1.1em;
+			}
+			#banner{
+				background: url(img/020.jpg);
+				background-size: cover;
+			}
+			#banner .wrap{
+				height: 600px;
+				display: flex;
+				align-items: center;
+			}
+			#banner p{
+				color: white;
+				font-size: 1.1em;
+				width: 38%;
+				background-color: rgba(0,0,0,0.4);
+				padding: 1em;
+				border-radius: 0 38px 0 38px;
+			}
+			#banner p:first-letter{
+				color: #FF7F50;
+				font-size: 1.3em;
+				font-weight: bold;
+			}
+			
+			.title{
+				text-align: center;
+			}
+			.flexbox{
+				display: flex;
+				justify-content: space-between;
+			}
+			#news .wrap{
+				padding: 30px 0px;
+			}
+			#news{
+				background-color: #fff;
+			}
+			#news .box{
+				width: 250px;
+				overflow: hidden;
+				border-radius: 25px;
+			}
+			#news .box img{
+				width: 100%;
+				opacity:0.8;
+				transition: 0.2s all ease;
+			}
+			#news .box p{
+				background-color: antiquewhite;
+				padding: 1rem;
+			}
+			#news .box img:hover{
+				opacity: 1;
+			}
+				p{
+					text-indent:2em;
+					line-height:1.5em;
+				}
+				a{
+					text-decoration:none;
+					font-family:黑体;
+					color:antiquewhite;
+					background-color;cadetblue;
+					font-size:1.2em;
+				}
+				span.char{color:coral;}
+				
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="wrap">
+				<h1 id="logo"><img src="img/001.png" /></h1>
+				<ul id="nav">
+					<a href="云乡呓语.html">首页</a>
+					<a href="公司简介.html">公司简介</a>
+					<a href="新闻资讯.html">新闻资讯</a>
+					<a href="方言文化介绍.html">方言文化介绍</a>
+					<a href="https://mp.weixin.qq.com/s/Udp3dCdT74olRJGeBbLy9A">联系我们</a>
+				</ul>
+				<form id="schbox">
+					<input type="text" />
+					<input type="submit" value="搜索" />
+				</form>
+			</div>
+		</div>
+		<div id="banner">
+			<div class="wrap">
+				<p>本公司名为蚌埠云乡呓语文化有限公司，以保护与传承传统方言文化为使命，秉持“以人为本“的服务态度，提供方言学习与交流平台，以线上线下相结合的营销方式，为传承方言文化，增强民族自信贡献力量，开创Z世代”方言+国风“品牌的先河。云“是指本产品以线上APP为依托，为用户开启”云“上交流之旅；”乡“指代”乡音“、”乡土文化“、”乡愁“等多种含义，本APP既提供方言学习服务，又提供乡土文化交流平台，更是一个抒发乡愁的情绪树洞。”呓语“指梦话，比喻荒谬糊涂的话在梦中窃窃私语，在现实生活中，我们使用普通话的频率远远超过了方言的使用频率，方言作用的场所越来越少，而在当今快节奏的社会发展中，我们只能在梦中慢下来，追忆家乡的温暖，用方言诉说着生活的压力与无尽的乡愁。</p>
+			</div>
+		</div>
+		
+		<div id="news">
+			<div class="wrap">
+				<h1 class="title">团队介绍</h1>
+				<div class="flexbox">
+					<div class="box">
+						<img src="img/007.jpg" />
+						<p>董事长  <span class="char">贾序坤</span></p>
+						<p>安徽财经大学</p>
+						<p>蚌埠云乡呓语文化有限公司董事。创新实战经验丰富，多次获得校表彰及荣誉称号。</p>
+					</div>
+					<div class="box">
+						<img src="img/008.jpg" />
+						<p>总经理  <span class="char">孙傲</span></p>
+						<p>安徽财经大学</p>
+						<p>项目总经理，具有较强执行力与领导力，熟悉掌握公司管理，实战经验丰富。</p>
+					</div>
+					<div class="box">
+						<img src="img/009.jpg" />
+						<p>财务总监  <span class="char">刘富荣</span></p>
+						<p>安徽财经大学</p>
+						<p>项目财务总监，拥有专业的会计素养和统筹能力，拥有较强职业素养。</p>
+					</div>
+					<div class="box">
+						<img src="img/010.jpg" />
+						<p>设计总监  <span class="char">徐丹</span></p>
+						<p>安徽财经大学</p>
+						<p>项目设计总监，深刻理解公司文化及管理体系，拥有专业的绘画技能与PS技能，熟悉掌握公司产品与服务。</p>
+					</div>
+					<div class="box">
+						<img src="img/011.jpg" />
+						<p>运营总监  <span class="char">林晓旋</span></p>
+						<p>安徽财经大学</p>
+						<p>项目运营总监，掌握新媒体信息传播的理论知识与实践技能，兼具新媒体组织运营能力和管理能力。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

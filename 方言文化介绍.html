@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js">
+		</script>
+		<title>云乡呓语</title>
+		<style type="text/css">
+			*{
+				margin:0;
+				padding:0;
+				list-style: none;
+				text-decoration: none;
+				border: none;
+				}
+			.wrap{
+				width:1470px;
+				margin:0 auto;
+				}
+			#header{
+				background:lightblue;
+				}
+			#header .wrap{
+				display: flex;
+				height: 65px;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#nav{
+				display: flex;
+			}
+			#nav a{
+				padding:20px;
+				color:#fff;
+			}
+			#schbox{
+				display: flex;
+				border-radius: 30px;
+				overflow: hidden;
+			}
+			#schbox [type="submit"]{
+				width: 50px;
+				height: 30px;
+				background-color: darkturquoise;
+				color: white;
+			}
+			#schbox [type="text"]{
+				width: 200px;
+				height: 30px;
+				padding-left: 1em;
+				font-size: 1.1em;
+			}
+				div.box{
+					margin:20px;
+					display:flex;
+					vertical-align:middle;
+					background-color: aliceblue;
+					border-radius: 20px;
+					overflow:hidden;
+					box-shadow: 5px 3px 6px #666666
+				}
+				div.box h4{
+					background-color: skyblue;
+					padding:10px 20px;
+					margin:0;
+				}
+				div.box p{
+					margin:1em;
+					text-indent:2em;
+					line-height:1.8em;
+					font-size:1.2em;
+				}
+				.flexboxes{
+					display: flex;
+					justify-content: space-between;
+				}
+				#crew .wrap{
+					padding: 20px 0;
+				}
+				#crew .boxes{
+						width: 250px;
+						margin-left: 3rem;
+						margin-right: 3rem;
+					}
+				#crew .boxes img{
+					width:200px;
+					height:200px;
+					border:3px solid #eee;
+					transition: 0.2s all ease;
+					}
+					#crew .boxes img:hover{
+						transform: translate(0,-3px) rotateY(360deg) scale(2);
+					}
+				#crew .name{
+					font-size:1.2rem;
+					margin:0.5rem;
+					}
+				#crew .position{
+					font-size:1rem;
+					color:#333;
+					}
+					.boxes{
+						background-color: white;
+						margin-bottom: 10px;
+						padding: 1em;
+						border-radius: 20px;
+						display:inline-block;}
+				.title{
+					text-align: center;
+				}
+				.flexboxs{
+					justify-content: space-between;
+				}
+				#crew .boxs{
+						width: 250px;
+						margin-left: 10rem;
+						
+					}
+				#crew .boxs img{
+					width:200px;
+					height:200px;
+					border:5px solid #eee;
+					transition: 0.2s all ease;
+					}
+					#crew .boxs img:hover{
+						transform: translate(0,-3px) rotateY(360deg) scale(3);
+					}
+				#crew .name{
+					font-size:1.2rem;
+					margin:0.5rem;
+					}
+				#crew .position{
+					font-size:1rem;
+					color:#333;
+					}
+					.boxs{
+						background-color: white;
+						margin-bottom: 10px;
+						padding: 1em;
+						border-radius: 20px;
+						display:inline-block;}
+				
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<div class="wrap">
+				<h1 id="logo"><img src="img/001.png" /></h1>
+				<ul id="nav">
+					<a href="云乡呓语.html">首页</a>
+					<a href="公司简介.html">公司简介</a>
+					<a href="新闻资讯.html">新闻资讯</a>
+					<a href="方言文化介绍.html">方言文化介绍</a>
+					<a href="https://mp.weixin.qq.com/s/Udp3dCdT74olRJGeBbLy9A">联系我们</a>
+				</ul>
+				<form id="schbox">
+					<input type="text" />
+					<input type="submit" value="搜索" />
+				</form>
+			</div>
+		</div>
+		<div id="main">
+					<div class="box">
+						<h4>分布情况</h4>
+		<p>中国方言是汉语的分支。中国地域广阔，汉语的方言众多，是当今世界上语言资源最丰富的国家之一。根据教育部2019年《中国语言文字概况》介绍，汉语方言通常分为十大方言：官话方言、晋方言、吴方言、闽方言、客家方言、粤方言、湘方言、赣方言、徽方言、平话土话。各方言区内又分布着若干次方言和许多种“土语”。其中使用人数最多的官话方言可分为东北官话、北京官话、冀鲁官话、胶辽官话、中原官话、兰银官话、江淮官话、西南官话八种次方言。</p>
+					</div>
+					<div id="crew">
+						<div class="wrap">
+							<h1 class="title">局部分布</h1>
+							<div class="flexboxes">
+								<div class="boxes">
+									<img src="img/012.jpg" />
+									<p class="name">官话之一</p>
+									</div>
+								<div class="boxes">
+									<img src="img/013.jpg" />
+									<p class="name">官话之二</p>
+								</div>
+								<div class="boxes">
+									<img src="img/014.jpg" />
+									<p class="name">官话之三</p>
+								</div>
+								<div class="boxes">
+									<img src="img/015.jpg" />
+									<p class="name">官话之四</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div id="crew">
+							<div class="wrap">
+								<div class="flexboxs">
+									<div class="boxs">
+										<img src="img/016.jpg" />
+										<p class="name">官话之五</p>
+									</div>
+									<div class="boxs">
+										<img src="img/017.jpg" />
+										<p class="name">官话之六</p>
+									</div>
+									<div class="boxs">
+										<img src="img/018.jpg" />
+										<p class="name">晋语</p>
+									</div>
+									</div>
+								</div>
+							</div>
+	</body>
+</html>
