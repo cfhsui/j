@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<script>
+			src="http://cdn.bootcss.com/jquery/1.12.4/jquery.min.js">
+		</script>
+		<title>云乡呓语</title>
+		<style type="text/css">
+			
+			*{
+				margin:0;
+				padding:0;
+				list-style: none;
+				text-decoration: none;
+				border: none;
+				
+			
+				}
+			.wrap{
+				width:1470px;
+				margin:0 auto;
+				}
+			#header{
+				background:lightblue;
+				}
+			#header .wrap{
+				display: flex;
+				height: 65px;
+				justify-content: space-between;
+				align-items: center;
+			}
+			#nav{
+				display: flex;
+			}
+			#nav a{
+				padding:20px;
+				color:#fff;
+			}
+			#schbox{
+				display: flex;
+				border-radius: 30px;
+				overflow: hidden;
+			}
+			#schbox [type="submit"]{
+				width: 50px;
+				height: 30px;
+				background-color: darkturquoise;
+				color: white;
+			}
+			#schbox [type="text"]{
+				width: 200px;
+				height: 30px;
+				padding-left: 1em;
+				font-size: 1.1em;
+			}
+			.window{
+				position: relative;
+				width: 1470px;
+				height: 600px;
+				overflow: hidden;
+				margin: 0 auto;
+				}
+			.window .slide{
+				position: absolute;
+				width: 14700px;
+				height: 600px;
+				}
+			.window .slide img{
+				width: 1470px;
+				height: 600px;
+				}
+			.window .prev,.window .next{
+				position: absolute;
+				top: 45%;
+				font-size: 48px;
+			    font-family: '黑体';
+				font-weight:bold;
+				color: #ffffff;
+				}
+			.window .prev{
+				left: 10px;
+				}
+			.window .next{
+				right: 10px;
+				}
+			.window .indicator{
+				width: 1470px;
+				position:absolute;
+				bottom:10px;
+				display: flex;
+				justify-content: center;
+				}
+			.window .indicator span{
+				width: 15px;
+				height: 15px;
+				border-radius: 50%;
+				margin: 5px;
+				background-color: #ffffff;
+				}
+			.window .indicator .on{
+				background-color: #00CED1;
+				}
+			.window .next:hover, .window .prev:hover, .window .indicator span:hover{
+				cursor: pointer;
+				}
+				.title{
+					background-color: papayawhip;
+				}
+				.pa{
+					width: 1470px;
+					height: 350px;
+					
+					/* margin-left: 10px; */
+					background-color: whitesmoke;
+					/* text-align: center; */
+				}
+				.flexbox{
+					display: flex;
+					/* justify-content: center; */
+					/* margin-left: 0; */
+				}
+				#news .wrap{
+					padding: 20px 0;
+				}
+				#news{
+					background-color: #fff;
+				}
+				#news .box{
+					width: 1000px;
+					overflow: hidden;
+					border-radius: 10px;
+					
+				}
+				#news .box img{
+					width: 50%;
+					height:70%;
+					border:5px solid #eee;
+					transition: 0.2s all ease;
+				}
+				div.boxsss{
+					width:1000px;
+					display:inline-block;
+					vertical-align:top;
+					overflow:hidden;
+					margin-left: -500px;
+					font-size:1.5rem ;
+					text-indent:2em;
+				}
+				span.char{color:red;}
+				.flexbos{
+					display: flex;
+				}
+				#ne .wrap{
+					padding: 20px 0;
+				}
+				#ne{
+					background-color: #fff;
+				}
+				#ne .boa{
+					width: 1000px;
+					overflow: hidden;
+					border-radius: 10px;
+					margin-top: -170px;
+				}
+				#ne .boc{
+					width: 1000px;
+					overflow: hidden;
+					border-radius: 10px;
+					margin-top: -330px;
+					
+				}
+				#ne .boa img{
+					width: 50%;
+					height:50%;
+					border:5px solid #eee;
+					transition: 0.2s all ease;
+					
+				}
+				#ne .boc img{
+					width: 50%;
+					height:50%;
+					border:5px solid #eee;
+					transition: 0.2s all ease;
+					
+				}
+				div.bob{
+					width:1000px;
+					display:inline-block;
+					vertical-align:top;
+					overflow:hidden;
+					margin-left: -500px;
+					font-size:1.5rem ;
+					text-indent:2em;
+					margin-top: -170px;
+				}
+				div.bod{
+					width:1000px;
+					display:inline-block;
+					vertical-align:top;
+					overflow:hidden;
+					margin-left: -500px;
+					font-size:1.5rem ;
+					text-indent:2em;
+					margin-top: -330px;
+				}
+				.n{
+					text-align: center;
+					margin-top: -350px;
+				}
+			</style>
+		</head>
+		
+		<body>
+			
+			<div id="header">
+				<div class="wrap">
+					<h1 id="logo"><img src="img/001.png" /></h1>
+					<ul id="nav">
+						<a href="云乡呓语.html">首页</a>
+						<a href="公司简介.html">公司简介</a>
+						<a href="新闻资讯.html">新闻资讯</a>
+						<a href="方言文化介绍.html">方言文化介绍</a>
+						<a href="https://mp.weixin.qq.com/s/Udp3dCdT74olRJGeBbLy9A">联系我们</a>
+					</ul>
+					<form id="schbox">
+						<input type="text" />
+						<input type="submit" value="搜索" />
+					</form>
+				</div>
+			</div>
+			<div class="window">
+				<div class="slide" style="left: -1470px">
+					<img src="img/004.jpg" /><img src="img/002.jpg" /><img src="img/005.jpg" /><img src="img/003.jpg" /><img src="img/004.jpg" /><img src="img/002.jpg" />
+				</div>
+				<div class="prev"><</div>
+					<div class="next">></div>
+					<div class="indicator">
+						<span class="dot on" index="0"></span>
+						<span class="dot" index="1"></span>
+						<span class="dot" index="2"></span>
+						<span class="dot" index="3"></span>
+					</div>
+				</div>
+				
+				 <script type="text/javascript">
+				var slide_window=document.getElementsByClassName('window')[0];
+				var slide=document.getElementsByClassName('slide')[0];
+				var prev=document.getElementsByClassName('prev')[0];
+				var next=document.getElementsByClassName('next')[0];
+				var dot=document.getElementsByClassName('dot');
+				var curIndex=0;
+				var toggled=true;
+				var WIDTH=1470;
+				var stepLenth=5;
+				var times=WIDTH/stepLenth;
+				function Toggle () {
+					var leftToggle=function () {
+						var t1=times;
+						function leftStep(){
+							slide.style.left=parseInt(slide.style.left)+stepLenth+"px";
+							t1--;
+							if (!t1) {
+								clearInterval(interval);
+								curIndex--;
+								if (curIndex<0) {
+									slide.style.left=parseInt(slide.style.left)-WIDTH*4+"px";
+									curIndex=3;
+								}
+								toggled=true;
+							}
+						}
+						if (toggled==true) {
+							toggled=false;
+							dot[curIndex].className="dot";
+							if (curIndex!=0) {
+								dot[curIndex-1].className="dot on";
+							}
+							else{
+								dot[curIndex+3].className="dot on";
+							}
+							var interval=setInterval(leftStep,stepLenth);
+						}
+					}
+					
+					var rightToggle=function () {
+						var t2=times;
+						function leftStep(){
+							slide.style.left=parseInt(slide.style.left)-stepLenth+"px";
+							t2--;
+							if (!t2) {
+								clearInterval(interval)
+								curIndex++;
+									if (curIndex>3) {
+										slide.style.left=parseInt(slide.style.left)+WIDTH*4+"px";
+										curIndex=0;
+									}
+								toggled=true;
+							}
+						}
+						if (toggled==true) {
+							toggled=false;
+							dot[curIndex].className="dot";
+							if (curIndex!=3) {
+								dot[curIndex+1].className="dot on";
+							}
+							else{
+								dot[curIndex-3].className="dot on";
+							}
+							var interval=setInterval(leftStep,stepLenth);
+						}
+					}
+					this.leftToggle=leftToggle;
+					this.rightToggle=rightToggle;
+				}
+				
+				var toggle=new Toggle();
+				prev.onclick=function () {
+					toggle.leftToggle();
+					}
+				next.onclick=function () {
+					toggle.rightToggle();
+					}
+				for (var i = 0; i < dot.length; i++) {
+					dot[i].onclick=function () {
+						var newIndex=parseInt(this.getAttribute("index"));
+						if (newIndex!=curIndex) {
+							var distance=-WIDTH*(newIndex-curIndex);
+							slide.style.left=parseInt(slide.style.left)+distance+"px";
+							dot[curIndex].className="dot";
+							dot[newIndex].className="dot on";
+							curIndex=newIndex;
+						}
+					}
+				}
+				var intervalo=setInterval(toggle.rightToggle,3000);
+				slide_window.onmouseover=function () {
+					clearInterval(intervalo);
+				}
+				slide_window.onmouseout=function () {
+					intervalo=setInterval(toggle.rightToggle,3000);
+				}
+				</script>
+				<div id="news">
+					<div class="wrap">
+						<h1 class="title">产品介绍</h1>
+						<div class="flexbox">
+							<div class="box">
+								<img src="img/021.jpg" />
+							</div>
+							<div class="boxsss">
+								<h4>卫衣</h4>
+								<p><span class="char">¥69.00</span></p>
+								<p>原创设计方言文化保号顺顺圆领卫衣秋冬休闲宽松上衣</p>
+							</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="ne">
+					<div class="flexbos">
+						<div class="boa">
+							<img src="img/022.jpg" />
+						</div>
+						<div class="bob">
+							<h4>笔记本</h4>
+							<p><span class="char">¥4.80</span></p>
+							<p>高颜值小众简约精装本横线本</p>
+						</div>
+				</div>
+				<div id="ne">
+					<div class="flexbos">
+						<div class="boc">
+							<img src="img/023.jpg" />
+						</div>
+						<div class="bod">
+							<h4>日历</h4>
+							<p><span class="char">¥15.98</span></p>
+							<p>新款创意简约小清新桌面日历挂历记事本打卡计划本</p>
+						</div>
+				</div>
+				<div id="ne">
+					<div class="flexbos">
+						<div class="boc">
+							<img src="img/024.jpg" />
+						</div>
+						<div class="bod">
+							<h4>明信片</h4>
+							<p><span class="char">24张/¥15.98</span></p>
+							<p>明信片可定制个性定做感谢片贺卡</p>
+						</div>
+				</div>
+				<div id="ne">
+					<div class="flexbos">
+						<div class="boc">
+							<img src="img/025.jpg" />
+						</div>
+						<div class="bod">
+							<h4>帆布包</h4>
+							<p><span class="char">¥39.8</span></p>
+							<p>小众百搭大容量单肩包手提装书布袋</p>
+						</div>
+				</div>
+				<div class="n">
+					<img src="img/026.jpg"/>
+				</div>
+	</body>
+</html>
